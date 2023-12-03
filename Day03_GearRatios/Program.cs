@@ -44,8 +44,7 @@ var input = cookie switch
 var grid = input
     .Split(Environment.NewLine)
     .Where(line => string.IsNullOrWhiteSpace(line) is false)
-    .Select(line => line.ToCharArray()
-        .Where(c => c is not '\r' or '\n')
+    .Select(line => line.Trim().ToCharArray()
         .Select(c => c switch
         {
             '.' => Schema.CreatePeriod(),
