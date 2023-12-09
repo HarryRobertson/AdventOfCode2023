@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+ 
+  <ItemGroup>
+    <None Update="Test1.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Test2.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Test3.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
